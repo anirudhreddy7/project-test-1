@@ -1,0 +1,73 @@
+﻿.carousel-container {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 15px;
+	overflow: hidden;
+}
+.carousel-container .row {
+    max-width: 100%;
+    margin: 0px auto;
+    width: 100%;
+	height: 100%;
+}
+#slider {
+    max-width: 960px;
+    clear: right;
+    overflow: visible;
+}
+.row.callout {margin: 15px auto 0 auto !important;}
+/* Video - Mad props to http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ ---------------------- */
+.flex-video {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 67.5%;
+    height: 100%;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.flex-video.widescreen {
+    padding-bottom: 57.25%;
+}
+.flex-video.vimeo {
+    padding-top: 0;
+}
+.flex-video iframe, .flex-video object, .flex-video embed, .flex-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-play {
+    position: absolute;
+    display:block;
+    width: 62px;
+    height: 42px;
+    top: 35%;
+    left: 35%;
+    margin: 0;
+    padding: 0;
+    background: url("/Sites/HMH/images/global/play-btn-small.png") no-repeat scroll 0px 0px transparent;
+}
+.icon-play:hover {
+    background: url("/Sites/HMH/images/global/play-btn-small.png") no-repeat 0 -42px;
+}
+
+
+.video.flex-inactive-slide .icon-play {display: none;}
+
+.video.flex-inactive-slide.flex-active-slide .icon-play {
+    position: absolute;
+    display:block;
+    width: 124px;
+    height: 84px;
+    top: 45%;
+    left: 45%;
+    margin: 0;
+    padding: 0;
+    background: url("/Sites/HMH/images/global/play-btn-normal.png") no-repeat scroll 0px 0px transparent;
+}
+.video.flex-inactive-slide.flex-active-slide .icon-play:hover {
+    background: url("/Sites/HMH/images/global/play-btn-normal.png") no-repeat 0 -84px;
+}
